@@ -1,6 +1,25 @@
-<!-- {% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'styles/main.css' %}"> -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Your Title</title>
 
-<footer class="text-center bg-dark">
-    <p><a href="{% url 'home_page' %}">© Рыся в поисках работы 2023</a></p>
-  </footer>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" integrity="sha384-r4HZ+L+Yd+kDQm1YEuWJ/w1Ctt10X8r6gR/EWWd6m21esG7/gzjoYKVcRxL6a7lq" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- Your content goes here -->
+
+<ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <a href="{% url 'home_page' %}" class="text-light">Главная</a> |
+        <a href="{% url 'about_us' %}" class="text-light">О нас</a> |
+        <a href="{% url 'contact_us' %}" class="text-light">Контакты</a>
+</ul>
+
+<!-- Bootstrap JS (optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-yjRryI8Fqc8fIqu5E80G8YXg7n3uJ4aR9HBo3lIiMuhxqZ7Ywu+2a4hLsG92NRCA" crossorigin="anonymous"></script>
+
+</body>
+</html>

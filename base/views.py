@@ -151,3 +151,13 @@ def deleteVac(request,pk):
 #     context = {'quiz_form': quiz_form}
 #     return render(request, 'base/create_quiz.html', context)
 
+
+def info_view(request):
+    # Ваш код для обработки запроса и формирования ответа
+    return render(request, 'base/info_page.html')
+
+
+
+def contact_us(request):
+    # Ваша логика представления здесь
+    return render(request, 'contact_us.html')
